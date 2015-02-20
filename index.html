@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bootstrap 3</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+		
+		<style>
+		@import url(http://www.markmurray.co/codepen/entypostyle.css);
+		*, *:after, *:before {
+		  -moz-box-sizing: border-box;
+		  -webkit-box-sizing: border-box;
+		  box-sizing: border-box;
+		}
+			body{
+				padding-bottom: 11em;
+				height: 100%;
+			}	
+
+			.jumbotron{
+				text-align: center;
+			}
+
+
+			/*.row:first-child {
+			  background: transparent;
+			  margin-top: 2em !important;
+			}
+			.row:first-child i {
+			  color: #34495e;
+			  border: 2px solid;
+			  border-radius: 50%;
+			  padding: 0.5em;
+			  position: relative;
+			  background: transparent;
+			}
+			.row:first-child i:hover {
+			  top: -2px;
+			  border-radius: 50%;
+			  color: white !important;
+			}*/
+
+			.twitter{
+			  background: transparent;
+			  border-radius: 24px !important;
+			  padding: 4px 8px !important;
+			  /*padding-bottom: 10px;*/
+			  margin-left: 3em;
+			  margin-top: .5em;
+			}
+			
+			.twitter:hover{
+			  background: transparent
+			  border-radius: 50%;
+			  background-color: #00a0d1;
+			}
+
+			.icon-twitter {
+
+			  color: #00a0d1;
+			  border-color: #00a0d1;
+			  /*background: transparent
+			  border-radius: 50%;*/
+			  width: 100px !important;  
+  			  height: 100px !important;
+  			  background-size: 938px 318px !important;  
+  			  background-position: -624px -48px !important;  
+			  
+			}
+
+			.icon-twitter:hover {
+			  background: #00a0d1;
+			  color: white !important;
+			  border-radius: 50%;
+			}
+ 
+				#share-buttons img {
+				width: 35px;
+				padding: 5px;
+				border: 0;
+				box-shadow: 0;
+				display: inline;
+				}
+ 
+
+
+		</style>
+	
+	</head>
+	<body>
+
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+
+				<a href="#" class="navbar-brand">My Site</a>
+
+				<div class="navbar-toggle" data-toggle ="collapse" data-target =".navHeaderCollapse">
+
+					<span class="icon-bar"></span>	
+					<span class="icon-bar"></span>	
+					<span class="icon-bar"></span>	
+
+				</div>
+
+				<div class="collapse navbar-collapse navHeaderCollapse">
+
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Blog</a></li>
+						<li class="dropdown">
+							<a href ="#" class="dropdown-toggle" data-toggle="dropdown">Social Media<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Google+</a></li>
+								<li><a href="#">LinkedIn</a></li>
+							</ul>
+						</li>	
+						<li><a href="#">About</a></li>
+						<li><a href="#contact" data-toggle="modal">Contact</a></li>
+						
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Hello World!</h1>
+				<p>I am using Bootstrap 3.0 to develop a test site that is going to be responsive, bruh how cool is that?</p>
+
+				<a href="" class="btn btn-warning">Watch Now</a>
+				<a href="" class="btn btn-info">Like</a>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="alert alert-warning alert-dismissible" role="alert">	
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+
+				<strong>Warning!</strong> Better check yourself, you're not looking too good.
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-3">
+				
+					<h3><a href="#">Responsive Info</a></h3>	
+					<p>This is where some text is made to talk about the product info section so it will inform the customer. Do you wanna know why this is so important? It's because we need the window to appear in all consoles and viewports, ja feel?</p>
+					<a href="#" class="btn btn-default">Read More</a>
+
+				</div>
+
+				<div class="col-md-3">
+				
+					<h3><a href="#">Info #1</a></h3>	
+					<p>This is where some text is made to talk about the product info section so it will inform the customer. Do you wanna know why this is so important? It's because we need the window to appear in all consoles and viewports, ja feel?</p>
+					<a href="#" class="btn btn-default">Read More</a>
+
+				</div>
+
+				<div class="col-md-3">
+				
+					<h3><a href="#">Info #2</a></h3>	
+					<p>This is where some text is made to talk about the product info section so it will inform the customer. Do you wanna know why this is so important? It's because we need the window to appear in all consoles and viewports, ja feel?</p>
+					<a href="#" class="btn btn-default">Read More</a>
+
+				</div>
+
+				<div class="col-md-3">
+				
+					<h3><a href="#">Info #3</a></h3>	
+					<p>This is where some text is made to talk about the product info section so it will inform the customer. Do you wanna know why this is so important? It's because we need the window to appear in all consoles and viewports, ja feel?</p>
+					<a href="#" class="btn btn-default">Read More</a>
+				</div>
+
+			</div>
+		</div>
+
+
+		<footer class="footer navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text pull-left">Site by Sevag</p>
+				<a href="#" class="navbar-btn btn btn-primary pull-right">Subscribe Here!</a>
+				
+
+				<button class="twitter btn btn-default btn-lg" type="button" aria-label="Twitter"><span class="icon-twitter"></span></button>
+				
+				<!-- <a href="#" style="color:black; background-color: blue;" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a> -->
+
+				<!-- <button title="Email"><span class="icon-twitter"></span></button> -->
+				<!-- <div class="round-button"><div class="round-button-circle"><a href="http://example.com" class="round-button">Button!!</a></div></div> -->				
+
+			</div>
+		</footer>
+
+		
+		<div class="modal fade" id="contact" role="dialog">
+			
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4>Contact Tech Site</h4>
+					</div>
+					<div class="modal-body">
+						<p>This will be some information ya know bruh?</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+function update(i){
+	getElementById('image').style.backgroundImage="url(" + i.src + ")";
+	getElementById('image').innerHTML = i.alt;
+}
+
+function undo{
+	
+	getlelementbyid('image').style.bacgroundImage ="url()";
+	document.getelementbyid('image').innerHTM="Hover over my image"
+}
+
+pass in (this.id or this) within the FUNCTION	
+
+ -->
